@@ -1,0 +1,27 @@
+{
+  "name": "monorepo-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wipe": "lerna clean",
+    "start-storybook": "./scripts/start-storybook.sh",
+    "start-webapp": "./scripts/start-webapp.sh",
+    "build-components": "lerna run build-components"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lerna": "^3.22.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0"
+  }
+}

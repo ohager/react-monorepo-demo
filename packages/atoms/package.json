@@ -1,0 +1,25 @@
+{
+  "name": "@acme/atoms",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "ohager <oliver.hager@dextra-sw.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build-components": "babel src --out-dir lib"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ]
+}
