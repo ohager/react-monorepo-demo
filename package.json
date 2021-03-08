@@ -8,7 +8,8 @@
     "wipe": "lerna clean",
     "start-storybook": "./scripts/start-storybook.sh",
     "start-webapp": "./scripts/start-webapp.sh",
-    "build-components": "lerna run build-components"
+    "build-components": "lerna run build-components",
+    "postinstall": "lerna bootstrap && npm run build-components"
   },
   "author": "",
   "license": "ISC",
