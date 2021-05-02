@@ -6,10 +6,10 @@
   "dependencies": {
     "@acme/atoms": "^1.0.0",
     "@acme/molecules": "^1.0.0",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react-scripts": "3.4.3"
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^13.1.8",
+    "react-scripts": "4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
