@@ -1,0 +1,25 @@
+{
+  "name": "@acme/webapp-vanilla",
+  "version": "1.0.0",
+  "description": "A vanilla web app that uses bundled react components",
+  "author": "ohager <oliver.hager@dextra-sw.com>",
+  "homepage": "https://github.com/ohager/react-monorepo-demo#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohager/react-monorepo-demo.git"
+  },
+  "scripts": {
+    "start": "cd src && reload -b",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/ohager/react-monorepo-demo/issues"
+  },
+  "devDependencies": {
+    "reload": "^3.1.1"
+  },
+  "dependencies": {
+    "npm-watch": "^0.9.0"
+  }
+}
