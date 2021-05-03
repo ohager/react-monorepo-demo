@@ -7,20 +7,37 @@
   "license": "ISC",
   "main": "lib/index.js",
   "directories": {
+    "dist": "dist",
     "lib": "lib",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
   },
+  "watch": {
+    "build-components": "src/**/*.js"
+  },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
-    "build-components": "babel src --out-dir lib"
+    "build-components": "babel src --out-dir lib",
+    "bundle-components": "bili",
+    "watch-components": "npm-watch"
   },
   "dependencies": {
     "@acme/atoms": "^1.0.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "bili": "^5.0.5",
+    "rollup-plugin-auto-external": "^2.0.0"
   }
 }

@@ -18,8 +18,5 @@
   },
   "devDependencies": {
     "reload": "^3.1.1"
-  },
-  "dependencies": {
-    "npm-watch": "^0.9.0"
   }
 }

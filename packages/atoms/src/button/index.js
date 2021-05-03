@@ -1,8 +1,17 @@
-import React from 'react'
+import React from 'react';
 
+const ButtonStyle ={
+  padding: '1rem 1rem',
+  margin: '0.5rem',
+  fontWeight: 'bold',
+  borderRadius: '8px',
+  background: '#4c607d'
+}
 export const Button = ({children, onClick}) =>
   <button onClick={onClick}
-          type="button">
+          style={ButtonStyle}
+          type="button"
+  >
     {children}
   </button>
 
