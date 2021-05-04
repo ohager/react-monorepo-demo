@@ -5,7 +5,8 @@ const ButtonStyle ={
   margin: '0.5rem',
   fontWeight: 'bold',
   borderRadius: '8px',
-  background: '#4c607d'
+  // background: '#4c607d'
+  background: 'green'
 }
 export const Button = ({children, onClick}) =>
   <button onClick={onClick}

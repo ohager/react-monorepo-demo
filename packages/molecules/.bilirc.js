@@ -1,9 +1,12 @@
 module.exports = {
     input: "./src/index.js",
+    globals: {
+        '@acme/atoms': 'acme$atoms',
+    },
     output: {
         moduleName: "acme$molecules",
         fileName: "acme.molecules[min].js",
-        format: ["iife"],
+        format: ["iife", "iife-min"],
         dir: "./dist",
     },
     extendRollupConfig: (conf) => {
@@ -19,13 +22,7 @@ module.exports = {
         babel: {
             presets: ["@babel/preset-react"],
         },
-        commonjs: {
-            namedExports: {
-                '@acme/atoms': [
-                    'Button',
-                ],
-            }
-        },
+        commonjs: {},
         replace: {
             preventAssignment: true,
         },

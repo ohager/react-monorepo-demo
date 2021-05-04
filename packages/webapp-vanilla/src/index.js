@@ -14,6 +14,6 @@
             {
                 onClick
             },
-            ["Hit me"],
+            ['Hit me'],
         ), buttonElement);
 })()
