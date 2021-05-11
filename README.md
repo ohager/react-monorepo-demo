@@ -1,5 +1,9 @@
 # react-monorepo-demo
-Just a small demo on React with component library in a mono repo with npm and lerna
+This is a demo for mono-repository with mixed types of projects:
+
+- atoms, molecules: react component libraries
+- webapp: react app
+- webapp-vanilla: plain html, css, js web app importing atoms and molecules as minified bundles
 
 > Storybook is not working yet - need to figure out what the issue is
 
@@ -17,12 +21,11 @@ TO DO
 
 ## Bootstrapping
 
-Once cloned this repository do the following:
+Once cloned this repository just do the following:
 
 1. `npm i`
-2. `npx lerna bootstrap` to bootstrap package linking and installing their dependencies 
  
-And you are ready to go
+And you are ready to go!
 
 ## Build Component Packages
 
@@ -32,19 +35,20 @@ Just hack `npm run build-components`
 
 ## Run Apps
 
+React Web App: 'npm run webapp'
+Vanilla Web App: 'npm run webapp-vanilla'
+
 ## Use package in another package
 
 Just do `npx lerna add @acme/<wanted-package packages/<target-package>`
 
 Example:
 
-
 If we want to use `@acme/atoms` in `@acme/molecules` we type:
 
 `npx lerna add @acme/atoms packages/molecules`
 
 This adds a _symbolic link_ inside the `node_modules` folder in `molecules`.
-
 
 ## Add new packages
 
