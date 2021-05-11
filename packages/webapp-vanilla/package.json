@@ -10,9 +10,8 @@
     "url": "git+https://github.com/ohager/react-monorepo-demo.git"
   },
   "scripts": {
-    "start": "cd src && reload -b",
-    "test": "echo \"Error: run tests from root\" && exit 1",
-    "postinstall": ""
+    "start": "reload -b -d ./src",
+    "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/ohager/react-monorepo-demo/issues"

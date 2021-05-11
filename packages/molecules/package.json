@@ -18,7 +18,8 @@
     "access": "public"
   },
   "watch": {
-    "build-components": "src/**/*.js"
+    "build-components": "src/**/*.js",
+    "bundle-components": "src/**/*.js"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",

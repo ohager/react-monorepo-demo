@@ -7,12 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "wipe": "lerna clean",
     "dev-webapp": "concurrently \"npm:watch-components\" \"npm:start-webapp\"",
+    "dev-webapp-vanilla": "concurrently \"npm:watch-components\" \"npm:start-webapp-vanilla\"",
     "start-storybook": "./scripts/start-storybook.sh",
     "start-webapp": "./scripts/start-webapp.sh",
+    "start-webapp-vanilla": "./scripts/start-webapp-vanilla.sh",
     "watch-components": "lerna run watch-components",
     "build-components": "lerna run build-components",
     "bundle-components": "lerna run bundle-components",
-    "postinstall": "lerna bootstrap && npm run build-components"
+    "link-bundles": "./scripts/symlink-bundles.sh",
+    "postinstall": "lerna bootstrap && npm run build-components && npm run bundle-components && npm run link-bundles"
   },
   "author": "",
   "license": "ISC",

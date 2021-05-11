@@ -3,7 +3,7 @@ module.exports = {
     output: {
         moduleName: "acme$atoms",
         fileName: "acme.atoms[min].js",
-        format: ["iife"],
+        format: ["iife", "iife-min"],
         dir: "./dist",
     },
     extendRollupConfig: (conf) => {

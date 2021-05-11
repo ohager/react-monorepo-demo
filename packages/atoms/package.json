@@ -10,7 +10,8 @@
     "access": "public"
   },
   "watch": {
-    "build-components": "src/**/*.js"
+    "build-components": "src/**/*.js",
+    "bundle-components": "src/**/*.js"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
@@ -18,7 +19,10 @@
     "bundle-components": "bili",
     "watch-components": "npm-watch"
   },
-  "dependencies": {},
+  "dependencies": {
+    "date-fns": "^2.21.3",
+    "styled-components": "^5.1.1"
+  },
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
