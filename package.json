@@ -6,23 +6,43 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "wipe": "lerna clean",
+    "dev-webapp": "concurrently \"npm:watch-components\" \"npm:start-webapp\"",
+    "dev-webapp-vanilla": "concurrently \"npm:watch-components\" \"npm:start-webapp-vanilla\"",
     "start-storybook": "./scripts/start-storybook.sh",
     "start-webapp": "./scripts/start-webapp.sh",
+    "start-webapp-vanilla": "./scripts/start-webapp-vanilla.sh",
+    "watch-components": "lerna run watch-components",
     "build-components": "lerna run build-components",
-    "postinstall": "lerna bootstrap && npm run build-components"
+    "bundle-components": "lerna run bundle-components",
+    "link-bundles": "./scripts/symlink-bundles.sh",
+    "postinstall": "lerna bootstrap && npm run build-components && npm run bundle-components && npm run link-bundles"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lerna": "^3.22.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "lerna": "^4.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.11.6",
-    "@babel/core": "^7.11.6",
-    "@babel/preset-env": "^7.11.5",
-    "@babel/preset-react": "^7.10.4",
-    "babel-loader": "^8.1.0"
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.0",
+    "@babel/preset-react": "^7.13.13",
+    "@emotion/babel-plugin": "^11.3.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "babel-loader": "8.1.0",
+    "concurrently": "^6.0.2",
+    "npm-watch": "^0.9.0",
+    "rollup": "^2.47.0",
+    "rollup-plugin-bundle-size": "^1.0.3",
+    "rollup-plugin-internal": "^1.0.4",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2"
   }
 }
