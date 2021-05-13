@@ -20,8 +20,8 @@ function App() {
         >
           Learn React
         </a>
-        <Headline>Foobar</Headline>
-        <ButtonSet>
+        <Headline>Test</Headline>
+        <ButtonSet label='Another'>
           <Button>Button 1</Button>
           <Button>Button 2</Button>
         </ButtonSet>

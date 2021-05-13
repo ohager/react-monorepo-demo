@@ -1,4 +1,4 @@
 import React from 'react';
 
-export const Headline = ({children}) => <h1>{children}</h1>
+export const Headline = ({children, className}) => <h1 className={className}>{children}</h1>
 

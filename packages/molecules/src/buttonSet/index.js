@@ -18,10 +18,6 @@ const Buttons = styled.div`
   align-items: center;
 `
 
-const StyledLabel = styled(Label)`
-    border-color: #088a05;
-`
-
 export const ButtonSet = ({children, label}) => {
 
     const buttons = children.filter(({type}) => {
@@ -34,7 +30,7 @@ export const ButtonSet = ({children, label}) => {
 
     return (
         <Container>
-            <StyledLabel text={label}/>
+            {label && <Label text={label} />}
             <Buttons>{buttons}</Buttons>
         </Container>
     )

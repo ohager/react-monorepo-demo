@@ -9,5 +9,5 @@ const StyledDiv = styled.div`
   width: 100%
 `
 
-export const Label = ({text}) => <StyledDiv>{text}</StyledDiv>
+export const Label = ({text, className}) => <StyledDiv className={className}>{text}</StyledDiv>
 
