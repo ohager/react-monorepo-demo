@@ -10,11 +10,13 @@ const globals = {
     react: 'React',
     '@emotion/react': 'emo_react',
     '@emotion/styled': 'emo_styled',
+    '@acme/atoms': 'acme$atoms',
 }
 
 export default [
     {
         input: 'src/index.js',
+        external: ['@acme/atoms'],
         output: [
             {
                 name: 'acme$molecules',

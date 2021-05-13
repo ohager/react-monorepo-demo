@@ -34,7 +34,7 @@ export const ButtonSet = ({children, label}) => {
 
     return (
         <Container>
-            <Label style={{borderColor:'black !important'}} text={label}/>
+            <StyledLabel text={label}/>
             <Buttons>{buttons}</Buttons>
         </Container>
     )
